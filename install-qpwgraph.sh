@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -euo pipefail
+
 echo "===================================================="
 echo "     Omarchy: Installing  Qpwgraph (PipeWire)       "
 echo "===================================================="

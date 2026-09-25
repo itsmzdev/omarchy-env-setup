@@ -3,13 +3,13 @@
 set -euo pipefail
 
 echo "===================================================="
-echo "           Omarchy: Installing VSCode               "
+echo "           Omarchy: Installing Zed                  "
 echo "===================================================="
 
-omarchy install editor vscode
+omarchy install editor zed
 
-# echo "Making VSCode as a Default Editor"
-# omarchy default editor code
+echo "Making Zed as a Default Editor"
+omarchy default editor zed
 
 echo "===================================================="
 echo "         ✅ VSCode installed successfully!          "

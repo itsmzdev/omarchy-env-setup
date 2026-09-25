@@ -11,18 +11,24 @@ echo "===================================================="
 # --------------------------------------------------
 echo -e "\nExecuting: Removing Webapps..."
 
-omarchy webapp remove \
-  Basecamp \
-  ChatGPT \
-  Discord \
-  Figma \
-  Fizzy \
-  "Google Contacts" \
-  "Google Maps" \
-  "Google Messages" \
-  HEY \
-  X \
-  YouTube
+webapps=(
+  "Basecamp"
+  "ChatGPT"
+  "Discord"
+  "Figma"
+  "Fizzy"
+  "Google Contacts"
+  "Google Maps"
+  "Google Messages"
+  "HEY"
+  "X"
+  "YouTube"
+)
+
+for app in "${webapps[@]}"; do
+  echo "Removing web app: $app"
+  omarchy webapp remove "$app"
+done
 
 # Skipped webapps: GitHub, Google Photos, WhatsApp, Zoom
 
@@ -43,10 +49,9 @@ omarchy pkg drop \
   obsidian \
   obs-studio \
   kdenlive \
-  claude-code \
   chromium
 
-# Skipped packages: xournalpp, lazydocker, opencode
+# Skipped packages: xournalpp, lazydocker, opencode, claude-code
 
 omarchy remove security fido2
 omarchy remove security fingerprint

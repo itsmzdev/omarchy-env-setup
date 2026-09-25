@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -euo pipefail
+
 echo "===================================================="
 echo "     Omarchy: Installing Brave Origin Browser       "
 echo "===================================================="

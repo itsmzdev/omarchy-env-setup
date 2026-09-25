@@ -3,14 +3,12 @@
 set -euo pipefail
 
 echo "===================================================="
-echo "           Omarchy: Installing VSCode               "
+echo "        Omarchy: Installing Codex                   "
 echo "===================================================="
 
-omarchy install editor vscode
-
-# echo "Making VSCode as a Default Editor"
-# omarchy default editor code
+echo "→ Installing Codex..."
+omarchy install ai chatgpt
 
 echo "===================================================="
-echo "         ✅ VSCode installed successfully!          "
+echo "           ✅ Codex installed successfully!         "
 echo "===================================================="

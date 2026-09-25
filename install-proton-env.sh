@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -euo pipefail
+
 echo "===================================================="
 echo "     Omarchy: Installing Proton Env for Steam       "
 echo "===================================================="
