@@ -14,8 +14,8 @@ installers=(
   "./install-node.sh"
   "./install-codex.sh"
   "./install-mongodb.sh"
+  "./install-mysql.sh"
   "./install-stow.sh"
-  # "./install-mpv.sh"  # Skipped for now
   # "./install-qbittorrent.sh"
   # "./install-qpwgraph.sh"
   # "./install-steam.sh"

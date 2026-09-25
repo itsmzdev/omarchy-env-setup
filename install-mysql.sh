@@ -1,14 +1,15 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 set -euo pipefail
 
 echo "===================================================="
-echo "        Omarchy: Installing MPV Media Player        "
+echo "       Omarchy: Deploying MongoDB Container         "
 echo "===================================================="
 
-echo "→ Installing MPV Media Player..."
-omarchy pkg add mpv
+# Run the native Omarchy command
+echo "📥 Installing docker database..."
+omarchy install docker dbs MySQL
 
 echo "===================================================="
-echo "           ✅ MPV installed successfully!           "
+echo "         ✅ MongoDB deployed successfully!          "
 echo "===================================================="
