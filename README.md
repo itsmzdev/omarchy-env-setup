@@ -14,9 +14,9 @@ cd ~/repos/omarchy-env-setup
 
 Edit the app selections before running setup:
 
-- In `install-apps.sh`, add or remove entries in the `installers` array. Each listed installer must exist in this repository. To add a new app, create an `install-<app>.sh` script, then add its path to the array.
+- In `install-apps.sh`, add or remove entries in the `installers` array. Each listed installer must exist under `apps/`. To add an app, create `apps/install-<app>.sh`, then add its path (for example, `./apps/install-example.sh`) to the array.
 - In `remove-apps.sh`, edit the `webapps` array, the `omarchy pkg drop` list, and any `omarchy remove` commands to match what you want removed.
-- Review each `install-*.sh` script if you want to change how an app is installed.
+- Review the matching script in `apps/` if you want to change how an app is installed.
 
 If you want to use your own dotfiles, fork that repository too and change `DOTFILES_REPO_SSH` and `DOTFILES_REPO_HTTPS` in `setup-env.sh` to your fork's URLs. Otherwise, setup will clone the dotfiles repository currently configured there.
 
@@ -42,6 +42,6 @@ The clone logic tries SSH first and falls back to HTTPS. SSH requires a working 
 
 - `setup-env.sh` — entry point, repository clone logic, and execution order.
 - `install-apps.sh` — ordered selection of app installer scripts.
-- `install-*.sh` — individual app installers.
+- `apps/` — individual `install-<app>.sh` scripts.
 - `remove-apps.sh` — web app, package, and system component removal selections.
 - Dotfiles and Stow packages are maintained in the separate `dotfiles` repository.
