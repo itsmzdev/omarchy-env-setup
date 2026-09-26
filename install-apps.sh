@@ -9,6 +9,7 @@ echo "===================================================="
 # Define the exact order of installation scripts
 installers=(
   "./apps/install-brave-origin.sh"
+  "./apps/install-ghostty.sh"
   "./apps/install-vscode.sh"
   "./apps/install-zed.sh"
   "./apps/install-node.sh"

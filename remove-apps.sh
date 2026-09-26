@@ -21,7 +21,6 @@ webapps=(
   "Google Maps"
   "Google Messages"
   "HEY"
-  "X"
   "YouTube"
 )
 
@@ -41,6 +40,7 @@ echo -e "\nExecuting: Removing Packages..."
 omarchy pkg drop \
   typora \
   spotify \
+  foot \
   libreoffice-fresh \
   1password-beta \
   1password-cli \
